@@ -25,22 +25,111 @@
     </head>
 
     <body>
-        <h1>Portafolio de Alejandro</h1>
-        <p>+10 años de experiencia en el <strong>sector automotríz</strong></p>
+        <header>
+            <h1>Portafolio de Alejandro</h1>
 
-        <h2>Experiencia</h2>
+            <nav>
+                <a href="#experiencia">Experiencia</a>
+                <a href="#proyector">Proyectos</a>
+            </nav>
+        </header>
+        <main>
+            <h2>Experiencia</h2>
+            <p>+10 años de experiencia en el <strong>sector automotríz</strong></p>    
+            <ul>
+                <li class="list-item">Caminos</li>
+                <li class="list-item">ACDelco</li>
+                <li class="list-item">Ceiba Motor</li>
+            </ul>
 
-        <ul>
-            <li class="list-item">Caminos</li>
-            <li class="list-item">ACDelco</li>
-            <li class="list-item">Ceiba Motor</li>
-        </ul>
+            <img
+            id="Foto-image"
+            title="Foto de Alejandro" 
+            alt="Una fotografía de Alejandro Ceballos" 
+            src="./images/26415668-0812-496F-A3CD-8A1C758EC8DC_1_102_o.jpeg" 
+            width="200">
 
-        <img
-        id="Foto-image"
-        title="Foto de Alejandro" 
-        alt="Una fotografía de Alejandro Ceballos" 
-        src="./images/26415668-0812-496F-A3CD-8A1C758EC8DC_1_102_o.jpeg" 
-        width="200">
+            <section>
+                <h2>Preguntas frecuentes</h2>
+
+                <details>
+                    <summary>¿Qué estudios tienes?</summary>
+                    <p>Estudié en la UNAD una ingeniería de sistemas</p>
+                </details>
+
+                <details>
+                    <summary>¿Cuáles son tus hobbies?</summary>
+                    <p>Me gusta aprender sobre tecnología y conducir en motocicleta</p>
+                </details>
+            </section>
+
+            <section>
+                <form method="post" action="/">
+                    <h2>Formulario de contacto</h2>
+
+                    <fieldset>
+                        <legend>Información personal</legend>
+
+                        <div>
+                            <label>
+                            Nombre: <input type="text" name="name" placeholder="Alejandro Ceballos" required>
+                            </label>
+                        </div>
+
+                        <div>
+                            <label>
+                                Email: <input type="email" name="email" placeholder="alejandro.ceballos95@icloud.com" required>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Información adicional</legend>
+
+                        <div>
+                            <label>
+                                Teléfono: <input type="tel" name="phone" placeholder="3237889000" required>
+                            </label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Otros</legend>
+
+                        <div>
+                            <label for="why">¿Por qué quieres contactar?</label>
+                            <select name="why" id="why">
+                                <option value="1">Trabajo</option>
+                                <option value="2">Duda</option>
+                                <option value="3">Más información</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="terms">¿Aceptas los términos y condiciones?</label>
+                            <input type="checkbox" name="terms" id="terms" required>
+                        </div>
+
+                        <div>
+                            <datalist id="languages">
+                                <option value="JavaScript"></option>
+                                <option value="Python"></option>
+                                <option value="Java"></option>
+                                <option value="C#"></option>
+                            </datalist>
+                            <label>
+                                ¿Con qué lenguaje quieres que te ayude?
+                                <input list="languages" name="languages">
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <button>Enviar formulario</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            
+        </footer>
     </body>
 </html>
